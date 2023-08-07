@@ -1,0 +1,154 @@
+/* CLOWN PALETTE 
+primario = #6e2485
+secundario = #164087
+complementario = #d25434 
+oscuro = #1f1f1f
+claro = #d9d9d9
+
+*/
+
+html{
+    
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: Roboto, sans-serif !important;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #6e2485, #164087, #1f1f1f);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.blanco{
+  color: #d9d9d9 !important;
+}
+
+.morado{
+  color: #6e2485 !important;
+}
+
+.azul{
+  color: #164087 !important;
+}
+
+.naranja{
+  color: #d25434 !important;
+}
+
+hr{
+    background-color: #d25434;
+    height: 5px;
+    width: 50%;
+    margin:auto;
+    margin-bottom: 20px;
+
+
+}
+
+.icono{
+    padding: 10px;
+    height: 60px;
+    width: auto;
+}
+
+.btn-primary{
+  background-color: #6e2485;
+  border-color: #164087;
+  border: 1px solid;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #d9d9d9;
+  background-color: #d25434;
+  border-color: #d9d9d9; /*set the color you want here*/
+}
+
+.carousel-item{
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  display: none;
+  border-color: #d9d9d9;
+  height: auto;
+  background-color: #d25434;
+  border-radius: 20%;
+}
+
+#btn-back-to-top:hover {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  display: none;
+  border-color: #d25434;
+  height: auto;
+  background-color: #6e2485;
+  border-radius: 20%;
+}
+
+.modal-body{
+  text-align: justify;
+}
+
+.lottie-player{
+  height: 200px;
+  width: auto;
+}
+
+.social:hover{
+
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #d25434;
+}
+
+.nav-link:hover{
+  color: #d25434;
+}
+
+.carousel-caption{
+  background-color: #ffffff7e;
+  border-radius: 7px;
+  max-width: 40%;
+  margin: auto;
+  margin-bottom: -10px;
+}
+
+.carousel-caption  p{
+  font-size: larger;
+  line-height: 25%;
+  color: #164087 !important;
+}
+
+#avatarperfil{
+  border: 5px  #6e2485 !important;
+  border-radius: 50%;
+  overflow: hidden;
+  border-bottom: inset;
+}

@@ -31,6 +31,6 @@ function whats () {
     (n=document.createElement("script")).type="text/javascript",n.async=!0,n.src="https://widget.myalice.ai/index.js",
     (a=(e=document.body.getElementsByTagName("script"))[e.length-1]).parentNode.insertBefore(n,a),a.parentNode.insertBefore(t,a),
     n.addEventListener("load",(function(){MyAliceWebChat.init({selector:"myAliceWebChat",number:"50687798110",message:"",
-    color:"#25D366",channel:"wa",boxShadow:"medium",text:"Whatsapp",theme:"light",position:"left",mb:"110px",mx:"20px",
+    color:"#25D366",channel:"wa",boxShadow:"medium",text:"",theme:"light",position:"left",mb:"110px",mx:"20px",
     radius:"20px"})})))
 };

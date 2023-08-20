@@ -1,5 +1,11 @@
+'use strict';
+
+const espa = document.querySelectorAll('.espanol');
+const engl = document.querySelectorAll('.english');
+
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
+
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -34,3 +40,12 @@ function whats () {
     color:"#25D366",channel:"wa",boxShadow:"medium",text:"",theme:"light",position:"left",mb:"110px",mx:"20px",
     radius:"20px"})})))
 };
+
+function toggleLang() {
+    var x = document.getElementById('myDIV');
+    if (x.style.visibility === 'hidden') {
+      x.style.visibility = 'visible';
+    } else {
+      x.style.visibility = 'hidden';
+    }
+  }

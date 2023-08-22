@@ -50,14 +50,27 @@ body{
   color: #d25434 !important;
 }
 
+#btn-lang{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.langbutton{
+  padding: 1px;
+  margin: 5px;
+}
+
+.langicon{
+  height: 30px;
+  width: auto;
+}
+
 hr{
     background-color: #d25434;
     height: 5px;
     width: 50%;
     margin:auto;
     margin-bottom: 20px;
-
-
 }
 
 .icono{
@@ -164,6 +177,10 @@ hr{
   border-radius: 50%;
   overflow: hidden;
   border-bottom: inset;
+}
+
+.hidden{
+  display: none;
 }
 
 @media (max-width: 1400px) {

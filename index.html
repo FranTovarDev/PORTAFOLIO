@@ -6,7 +6,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Profesional</title>
+  <title class="espanol hidden">Portafolio Profesional</title>
+  <title class="english">Professional Portfolio</title>
   <link rel="icon" href="favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
@@ -20,7 +21,7 @@
 
 <body>
 <!-- nav -->
-  <div class="" style="background-color: #6e2485;">
+  <div class="fixed-top" style="background-color: #6e2485;">
     <nav class="navbar navbar-expand-lg container" data-bs-theme="dark" style="background-color: #6e2485;">
       <div class="container-fluid">        
         <img src="IMAGENES/whitelogo.png" alt="logo" height="30"> 
@@ -44,21 +45,31 @@
         
         <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
           
-          <ul class="navbar-nav">
+          
+
+          <ul class="navbar-nav" style="position: relative;">
+
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#info">Info</a>
+              <a class="nav-link " aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link espanol" href="#habilidades">Habilidades</a>
+              <a class="nav-link " aria-current="page" href="#info">Personal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link espanol" href="#portafolio">Portafolio</a>
+              <a class="nav-link espanol hidden" href="#habilidades">Habilidades</a>
+              <a class="nav-link english" href="#habilidades">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link espanol hidden" href="#portafolio">Portafolio</a>
+              <a class="nav-link english" href="#portafolio">Portfolio</a>
             </li>
             <li class="nav-item me-2">
-              <a class="nav-link espanol" href="#contacto">Contacto</a>
+              <a class="nav-link espanol hidden" href="#contacto">Contacto</a>
+              <a class="nav-link english" href="#contacto">Contact</a>
             </li>
+            
             <li class="nav-item ">
-<!-- darkmode switch -->
+            <!-- darkmode switch -->
               <div class="form-check form-switch ms-2 mt-2 me-1">
                 <label class="form-check-label ms-1" for="lightSwitch">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#d9d9d9" class="bi bi-brightness-high" viewBox="0 0 16 16">
@@ -67,6 +78,10 @@
                 </label>
                 <input class="form-check-input" type="checkbox" id="lightSwitch" />
               </div>
+            </li>
+            <li class="nav-item" >
+              <button type="button" class="langbutton btn btn-outline-light english" id="esp-button"> <img class="langicon" src="./IMAGENES/64px-Spain_flag_icon.svg.png" alt="spain flag"></button>
+              <button type="button" class="langbutton btn btn-outline-light espanol hidden" id="eng-button"> <img class="langicon" src="./IMAGENES/united_kingdom.svg" alt="british flag"></button>
             </li>
           </ul>
         </div>
@@ -84,14 +99,16 @@
             height="auto" loading="lazy">
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 blanco espanol">_HOLA! <br> Soy Francisco Tovar</h1>
-          
-          <h3 class="display-5 fw-bold text-body-emphasis mb-3 morado espanol" style="text-shadow: 1px 1px #d9d9d9;">Ingeniero de Software</h3>
-          <p class="lead blanco espanol">Desarrollo de aplicaciones de escritorio, Web y Videojuegos.</p>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 blanco espanol hidden">_HOLA! <br> Soy Francisco Tovar</h1>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 blanco english">_Hi! <br> I'm Francisco Tovar</h1>
+          <h3 class="display-5 fw-bold text-body-emphasis mb-3 morado espanol hidden" style="text-shadow: 1px 1px #d9d9d9;">Ingeniero de Software</h3>
+          <h3 class="display-5 fw-bold text-body-emphasis mb-3 morado english" style="text-shadow: 1px 1px #d9d9d9;">Software Engineer</h3>
+          <p class="lead blanco espanol hidden">Desarrollo de aplicaciones de escritorio, Web y Videojuegos.</p>
+          <p class="lead blanco english">Desktop applications, Web apps and Videogames development.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="./PDF/Fran_Tovar_CV_Esp.pdf" download="Curriculum Vitae">
+            <a href="./PDF/Fran_Tovar_CV_Esp.pdf" download="Curriculum">
               <button type="button" class="btn shadow-lg  btn-primary btn-lg px-4 me-md-2">
-                Curriculum
+                Curriculum Vitae
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
                   <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
                   <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2.5v2z"/>
@@ -99,7 +116,8 @@
                 
               </button>
             </a>
-            <a href="#contacto"><button type="button" class="btn shadow-lg  btn-primary btn-lg px-4  espanol">Contáctame!</button></a>
+            <a href="#contacto"><button type="button" class="btn shadow-lg  btn-primary btn-lg px-4  espanol hidden">Contáctame!</button></a>
+            <a href="#contacto"><button type="button" class="btn shadow-lg  btn-primary btn-lg px-4  english">Contact me!</button></a>
           </div>
         </div>
       </div>
@@ -110,8 +128,10 @@
   <div class="container my-3" id="info">
     <div class="p-5 text-center bg-body-tertiary rounded-3">
       
-      <h1 class="text-body-emphasis morado espanol">Quien soy yo?</h1>
-      <p class="col-lg-8 mx-auto fs-5 text-muted azul espanol">Algo más que pasión por el código</p>
+      <h1 class="text-body-emphasis morado espanol hidden">Quien soy yo?</h1>
+      <h1 class="text-body-emphasis morado english">Who am I?</h1>
+      <p class="col-lg-8 mx-auto fs-5 text-muted azul espanol hidden">Algo más que pasión por el código</p>
+      <p class="col-lg-8 mx-auto fs-5 text-muted azul english">Something more than just passion for code</p>
       <hr>
 
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -120,9 +140,13 @@
           <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
             <lottie-player src="./JSON/multitask.json" style="height: 150px;" autoplay loop></lottie-player>
           </div>          
-          <p class="col-lg-8 mx-auto fs-5 text-muted espanol">                
+          <p class="col-lg-8 mx-auto fs-5 text-muted espanol hidden">                
             Soy un desarrollador de software formado en la Universidad CENFOTEC, esposo, padre de familia y aficionado a los
             videojuegos.
+          </p>
+          <p class="col-lg-8 mx-auto fs-5 text-muted english">                
+            I'm a software developer that studied in CENFOTEC University, a loving husband and father to a beautiful teen daughter and 
+            last but not least avid videogame enthusiast.
           </p>
         </div>
         
@@ -130,8 +154,11 @@
           <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
             <lottie-player src="./JSON/programer.json" style="height: 200px;" autoplay loop></lottie-player>
           </div>          
-          <p class="col-lg-8 mx-auto fs-5 text-muted espanol">
+          <p class="col-lg-8 mx-auto fs-5 text-muted espanol hidden">
             Me especializo en crear soluciones de escritorio en Java y C#, y utilizo el MERN Stack para soluciones Web.
+          </p>
+          <p class="col-lg-8 mx-auto fs-5 text-muted english">
+            I specialize in creating software solutions in Java, and Web apps using the MERN stack.
           </p>
         </div>
 
@@ -140,18 +167,23 @@
             <lottie-player src="./JSON/gaming.json" style="height: 150px;" autoplay loop></lottie-player>
           </div>  
           
-          <p class="col-lg-8 mx-auto fs-5 text-muted espanol">
+          <p class="col-lg-8 mx-auto fs-5 text-muted espanol hidden">
             Una de mis pasiones son los videojuegos y podemos desarrollar uno que represente a su marca con orgullo!
+          </p>
+          <p class="col-lg-8 mx-auto fs-5 text-muted english">
+            One of my personal passions is creating videogames, and together we can create one that represents your brand proudly!
           </p>
         </div>
 
       </div>
 
       <div class="d-inline-flex gap-2 mb-5">
-        <button type="button" class="btn shadow-lg  btn-primary btn-lg px-4 me-md-2 espanol" data-bs-toggle="modal" data-bs-target="#modal-personal" >
+        <button type="button" class="btn shadow-lg  btn-primary btn-lg px-4 me-md-2 espanol hidden" data-bs-toggle="modal" data-bs-target="#modal-personal" >
           Más sobre mi          
         </button>
-
+        <button type="button" class="btn shadow-lg  btn-primary btn-lg px-4 me-md-2 english" data-bs-toggle="modal" data-bs-target="#modal-personal" >
+          About me        
+        </button>
       </div>
 
     </div>
@@ -161,17 +193,21 @@
   <!-- HABILIDADES -->  
 
   <div class="container px-4 py-5 text-center" id="habilidades">
-    <h2 class="pb-2 morado espanol">Mis habilidades técnicas</h2>
-    <p class=" espanol">Algunas tecnologías que he utilizado en mis proyectos</p>
-    <p></p>
+    <h2 class="pb-2 morado espanol hidden">Mis habilidades técnicas</h2>
+    <h2 class="pb-2 morado english">My technical skills</h2>
+    <p class=" espanol hidden">Algunas tecnologías que he utilizado en mis proyectos</p>
+    <p class=" english">Some of the frameworks and technologies I have used in past proyects</p>
+    
     <hr>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
       
       <div class="col d-flex flex-column align-items-center">        
         <img src="./ILUSTRACIONES/sql_icon.svg" class="lottie-player" alt="">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">SQL/PLSQL</h3>
-          <p class=" espanol">Bases de datos relacionales y programacion de scripts</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul ">SQL/PLSQL</h3>
+          
+          <p class=" espanol hidden">Bases de datos relacionales y programacion de scripts</p>
+          <p class=" english">Relational Databases and script programming</p>
         </div>
       </div>
 
@@ -179,22 +215,25 @@
         <img src="./ILUSTRACIONES/java_icon.svg" class="lottie-player" alt="">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul">Java</h3>
-          <p class=" espanol">Programación de aplicaciones de escritorio y mucho más con Java</p>
+          <p class=" espanol hidden">Programación de aplicaciones de escritorio y mucho más con Java</p>
+          <p class=" english">Desktop application development and much more with Java</p>
         </div>
       </div>
 
       <div class="col d-flex flex-column align-items-center">
         <img src="./ILUSTRACIONES/boot_icon.svg" class="lottie-player" alt="">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">Bootstrap</h3>
-          <p class=" espanol">Desarrollo de páginas web responsivas y hermosas con este potente framework</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul ">Bootstrap</h3>
+          <p class=" espanol hidden">Desarrollo de páginas web responsivas y hermosas con este potente framework</p>
+          <p class=" english">Responsive and beautiful web pages and apps with these potent framework</p>
         </div>
       </div>
       <div class="col d-flex flex-column align-items-center">
         <img src="./ILUSTRACIONES/mern_icon.svg" class="lottie-player" alt="">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">MERN Stack</h3>
-          <p class=" espanol">El cuarteto de poder del Backend, MongoDB, Express, React y NodeJs</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul ">MERN Stack</h3>
+          <p class=" espanol hidden">El cuarteto de poder del Backend, MongoDB, Express, React y NodeJs</p>
+          <p class=" english">Powerful backend development with MongoDB, Express, React and NodeJS</p>
         </div>
       </div>
     </div>
@@ -202,50 +241,61 @@
       <div class="col d-flex flex-column align-items-center">
         <img src="./ILUSTRACIONES/html_icon.svg" class="lottie-player" alt="">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">HTML/CSS/JS</h3>
-          <p class=" espanol">Dominio de la trifuerza del desarrollo web</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul ">HTML/CSS/JS</h3>
+          <p class=" espanol hidden">Dominio de la trifuerza del desarrollo web</p>
+          <p class=" english">Web development triforce, bases of all web</p>
         </div>
       </div>
       <div class="col d-flex flex-column align-items-center">
         <img src="./ILUSTRACIONES/git_icon.svg" class="lottie-player" alt="">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">Github</h3>
-          <p class=" espanol">Control de fuentes de código con Github</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul ">Github</h3>
+          <p class=" espanol hidden">Control de fuentes de código con Github</p>
+          <p class=" english">Source control with Github</p>
         </div>
       </div>
       <div class="col d-flex flex-column align-items-center">
         <img src="./ILUSTRACIONES/csharp_icon.svg" class="lottie-player" alt="">
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">C# .Net</h3>
-          <p class=" espanol">Potente desarrollo para windows bajo su framework .Net</p>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul ">C# .Net</h3>
+          <p class=" espanol hidden">Potente desarrollo para windows bajo su framework .Net</p>
+          <p class=" english">Potent Windows development under their .NET framework</p>
         </div>
       </div>
     </div>
 
     <div class="container px-4 py-5 text-center" id="habilidadesblandas">
-      <h2 class="pb-2 morado espanol">Mis habilidades blandas</h2>
-      <p class=" espanol">Que me hace sobresalir en mi trabajo</p>
+      <h2 class="pb-2 morado espanol hidden">Mis habilidades blandas</h2>
+      <h2 class="pb-2 morado english">My soft skills</h2>
+      <p class=" espanol hidden">Que me hace sobresalir en mi trabajo</p>
+      <p class=" english">Teamwork is the name of the game</p>
       <hr>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5">
         <div class="col d-flex flex-column align-items-center">
           <lottie-player src="./JSON/teamwork.json" class="lottie-player" autoplay loop></lottie-player>
           <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">Habilidad de trabajo en equipo</h3>
-            <p class=" espanol">Me gusta colaborar con otros para encontrar las mejores soluciones</p>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol hidden">Habilidad de trabajo en equipo</h3>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul english">Teamwork</h3>
+            <p class=" espanol hidden">Me gusta colaborar con otros para encontrar las mejores soluciones</p>
+            <p class=" english">Colaborating in a team is the basics of finding the best solutions</p>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center">
           <lottie-player src="./JSON/comunication.json" class="lottie-player" autoplay loop></lottie-player>
           <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">Excelente capacidad de comunicación</h3>
-            <p class=" espanol">Saber expresar una idea y escuchar a otros efectivamente es de alta prioridad</p>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol hidden">Excelente capacidad de comunicación</h3>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul english">Excelent communication skills</h3>
+            <p class=" espanol hidden">Saber expresar una idea y escuchar a otros efectivamente es de alta prioridad</p>
+            <p class=" english">To know how to express an idea and listening to your coworkers effectively is high priority</p>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center">
           <lottie-player src="./JSON/flexible.json" class="lottie-player" autoplay loop></lottie-player>
           <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">Flexibilidad, adaptabilidad y altamente organizado</h3>
-            <p class=" espanol">Mil soluciones para un mismo problema, en el orden encontraremos el camino.</p>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol hidden">Flexibilidad, adaptabilidad y altamente organizado</h3>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul english">Flexibility, adaptability and highly organized</h3>
+            <p class=" espanol hidden">Mil soluciones para un mismo problema, en el orden encontraremos el camino</p>
+            <p class=" english">A thousand solutions to one problem, finding the right one is the way to success</p>
           </div>
         </div>
       </div>
@@ -253,15 +303,19 @@
         <div class="col d-flex flex-column align-items-center">
           <lottie-player src="./JSON/learn3.json" class="lottie-player" autoplay loop></lottie-player>
           <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">Aprendo rápido</h3>
-            <p class=" espanol">Siempre hay algo nuevo que aprender, siempre!</p>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol hidden">Aprendo rápido</h3>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul enlgish">Fast Learner</h3>
+            <p class=" espanol hidden">Siempre hay algo nuevo que aprender, siempre!</p>
+            <p class=" english">There is always something new to learn, always! </p>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center">
           <lottie-player src="./JSON/analitico.json" class="lottie-player" autoplay loop></lottie-player>
           <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol">Pensamiento analitico y habilidad de resolver problemas</h3>
-            <p class=" espanol">Toda solución es un rompecabezas y la lógica es nuestra guía</p>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul espanol hidden">Pensamiento analitico y habilidad de resolver problemas</h3>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis azul english">Critical thinking and the ability to solve problems</h3>
+            <p class=" espanol hidden">Toda solución es un rompecabezas y la lógica es nuestra guía</p>
+            <p class=" english">Every solution is a jigsaw and logic is our way and guide to solve it</p>
           </div>
         </div>
 
@@ -273,9 +327,11 @@
   <div class="container my-3" id="portafolio">
     <div class="p-5 text-center bg-body-tertiary rounded-3">
       <!-- INSERTAR SVG animado -->
-      <h1 class="text-body-emphasis morado espanol">Mi portafolio</h1>
-      <p class="col-lg-8 mx-auto fs-5 text-muted espanol">Algunos trabajos sobresalientes que he realizado a través de mi
+      <h1 class="text-body-emphasis morado espanol hidden">Mi portafolio</h1>
+      <h1 class="text-body-emphasis morado english">My portfolio</h1>
+      <p class="col-lg-8 mx-auto fs-5 text-muted espanol hidden">Algunos trabajos sobresalientes que he realizado a través de mi
         carrera</p>
+        <p class="col-lg-8 mx-auto fs-5 text-muted english">Some of the highlights from the projects I have worked on</p>
       <hr>
 
       <div id="carouselPortafolio" class="carousel slide">
@@ -293,10 +349,12 @@
             <div class="carousel-item active">
               <img src="./IMAGENES/mishkamock.png" class="d-block w-100" alt="mishka">
               <div class="carousel-caption d-none d-md-block shadow-lg">
-                <h2 class="morado espanol">Mishka!</h2>
+                <h2 class="morado ">Mishka!</h2>
                 <hr>
-                <p class=" espanol">Booking de eventos públicos con web-commerce</p>
-                <p class=" espanol">Desarrollado en el MERN Stack</p>
+                <p class=" espanol hidden">Booking de eventos públicos con web-commerce</p>
+                <p class=" english">Public and private event booking with web-commerce</p>
+                <p class=" espanol hidden">Desarrollado en el MERN Stack</p>
+                <p class=" english">Developed with the MERN Stack</p>
               </div>
           </a>
           
@@ -306,10 +364,12 @@
             <a href="https://francisco-tovar.github.io/BlasterFaster/" target="_blank">
               <img src="./IMAGENES/blaster.png" class="d-block w-100" alt="Blasterfaster">
               <div class="carousel-caption d-none d-md-block">
-                <h2 class="morado espanol">Blaster Faster!</h2>
+                <h2 class="morado ">Blaster Faster!</h2>
                 <hr>
-                <p class=" espanol">Videojuego estilo space shooter</p>
-                <p class=" espanol">Desarrollado en Game Maker Engine</p>
+                <p class=" espanol hidden">Videojuego estilo space shooter</p>
+                <p class=" english">Shooter style Videogame</p>
+                <p class=" espanol hidden">Desarrollado en Game Maker Engine</p>
+                <p class=" english">Developed in Game Maker Engine</p>
               </div>
             </a>
             
@@ -319,10 +379,12 @@
             <a href="https://youtu.be/i5-PCZqMmZg" target="_blank">
               <img src="./IMAGENES/cenfomundos.png" class="d-block w-100" alt="reinoscenfotecos">
               <div class="carousel-caption d-none d-md-block">
-                <h2 class="morado espanol">Reinos Cenfotecos</h2>
+                <h2 class="morado ">Reinos Cenfotecos</h2>
                 <hr>
-                <p class=" espanol">Juego de estrategia creado en CENFOTEC</p>
-                <p class=" espanol">Desarrollado en Javascript y Java</p>
+                <p class=" espanol hidden">Juego de estrategia creado en CENFOTEC</p>
+                <p class=" english">Strategy game created in CENFOTEC</p>
+                <p class=" espanol hidden">Desarrollado en Javascript y Java</p>
+                <p class=" english">Developed in Javascript y Java</p>
               </div>
             </a>            
           </div>
@@ -331,10 +393,12 @@
             <a href="https://francisco-tovar.github.io/SuperCaveBoy/" target="_blank">
               <img src="./IMAGENES/superboimock.png" class="d-block w-100" alt="chicocaverna">
               <div class="carousel-caption d-none d-md-block">
-                <h2 class="morado espanol">Super Cave Boy</h2>
+                <h2 class="morado ">Super Cave Boy</h2>
                 <hr>
-                <p class=" espanol">Videojuego estilo plataforma</p>
-                <p class=" espanol">Desarrollado en Game Maker Engine</p>
+                <p class=" espanol hidden">Videojuego estilo plataforma</p>
+                <p class=" espanol hidden">Platform style videogame</p>
+                <p class=" espanol hidden">Desarrollado en Game Maker Engine</p>
+                <p class=" espanol hidden">Developed in Game Maker Engine</p>
               </div>
             </a>            
           </div>
@@ -343,11 +407,14 @@
             <a href="https://github.com/Francisco-Tovar/BusWatcher-Project" target="_blank">
               <img src="./IMAGENES/buswatchmock.png" class="d-block w-100" alt="buswatcher">
               <div class="carousel-caption d-none d-md-block">
-                <h2 class="morado espanol">Bus Watcher</h2>
+                <h2 class="morado ">Bus Watcher</h2>
                 <hr>
-                <p class=" espanol"> Monitoreo y rastreo de rutas de </p>
-                <p class=" espanol"> viajes de autobuses escolares</p>
-                <p class=" espanol">Desarrollado en C# .Net</p>
+                <p class=" espanol hidden"> Monitoreo y rastreo de rutas de </p>
+                <p class=" espanol hidden"> viajes de autobuses escolares</p>
+                <p class=" espanol hidden">Desarrollado en C# .Net</p>
+                <p class=" english"> School Bus routes tracking   </p>
+                <p class=" english"> and monitoring in real time</p>
+                <p class=" english">Developed in C# .Net</p>
               </div>
             </a>
             
@@ -379,17 +446,19 @@
       <div class="container px-4 py-5 text-center" id="icon-grid">
         <img src="IMAGENES/whitelogo.png" alt="logo blanco tovar ">
         
-        <h2 class="pb-2 mt-4 blanco espanol">Crearemos algo genial juntos!</h2>
-        <p class="col-lg-8 mx-auto fs-5 text-muted naranja espanol">Tiene algún proyecto en mente? <br> Hablemos y lo hacemos realidad!</p>
+        <h2 class="pb-2 mt-4 blanco espanol hidden">Crearemos algo genial juntos!</h2>
+        <p class="col-lg-8 mx-auto fs-5 text-muted naranja espanol hidden">Tiene algún proyecto en mente? <br> Hablemos y lo hacemos realidad!</p>
+        <h2 class="pb-2 mt-4 blanco english">Lets create something cool together!</h2>
+        <p class="col-lg-8 mx-auto fs-5 text-muted naranja english">Got an idea in mind? <br> Lets talk! We can create it together</p>
         <hr>
         <div class="container col-10 col-md-8 col-lg-6">
           <!-- Contact Form -->
-          <form action="https://formsubmit.co/fran.tovardev@gmail.com" method="POST">
+          <form class="espanol hidden" action="https://formsubmit.co/fran.tovardev@gmail.com" method="POST">
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_subject" value="Nuevo contacto del portafolio">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://frantovardev.github.io/PORTAFOLIO/gracias.html">
-            <input type="hidden" name="_autoresponse" value="Hola! soy Francisco y recibi tu mensaje pronto estaremos en contacto!">
+            <input type="hidden" name="_autoresponse" value="Hola! soy Francisco y recibi tu mensaje pronto estaremos en contacto!">            
             <div class="mb-3">
               <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Correo-e" aria-describedby="emailHelp" required>            
             </div>
@@ -401,11 +470,44 @@
             <div class="mb-3">
               <input type="text" name="Mensaje" class="form-control" id="MensajeInput" placeholder="Mensaje" required>
             </div>
-            <div id="emailHelp" class="form-text blanco espanol">Nunca divulgaremos su informacion con terceros</div>
+            <div id="emailHelp" class="form-text blanco ">
+              <p class="espanol hidden">Nunca divulgaremos su informacion con terceros</p>              
+            </div>
+            
+            
             <br>
-            <button type="submit" class="btn shadow-lg  btn-primary espanol">Enviar!</button>
+            <button type="submit" class="btn shadow-lg  btn-primary espanol hidden">Enviar!</button>
+            <button type="submit" class="btn shadow-lg  btn-primary english">send!</button>
           </form>
           
+          <form class="english" action="https://formsubmit.co/fran.tovardev@gmail.com" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_subject" value="New Portfolio contact">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://frantovardev.github.io/PORTAFOLIO/gracias.html">
+            <input type="hidden" name="_autoresponse" value="Hi! I'm Francisco and I got your message, we'll be in contact soon!">            
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="e-mail" aria-describedby="emailHelp" required>            
+            </div>
+    
+            <div class="mb-3">
+              <input type="text" name="nombre" class="form-control" id="NombreInput" placeholder="Name" required>
+            </div>
+    
+            <div class="mb-3">
+              <input type="text" name="Mensaje" class="form-control" id="MensajeInput" placeholder="Message" required>
+            </div>
+            <div id="emailHelp" class="form-text blanco ">
+              <p >We will never share your information with a third party</p>              
+            </div>
+            
+            
+            <br>
+            
+            <button type="submit" class="btn shadow-lg  btn-primary english">send!</button>
+          </form>
+
+
         </div>
         
       </div>
@@ -417,11 +519,12 @@
     <div class="modal-dialog ">
       <div class="modal-content container">
         <div class="modal-header">
-          <h2 class="modal-title morado" id="modal-title espanol"> Biografía </h2>
+          <h2 class="modal-title morado espanol hidden" id="modal-title"> Biografía </h2>
+          <h2 class="modal-title morado" id="modal-title english"> Biography </h2>
           <button type="button" class="btn -close morado" data-bs-dismiss="modal" aria-label="cerrar">X</button>
         </div>
         <div class="modal-body azul">
-          <p class=" espanol">Hola, mi nombre es <span class="morado">Francisco Tovar.</span> <br><br>
+          <p class=" espanol hidden">Hola, mi nombre es <span class="morado">Francisco Tovar.</span> <br><br>
             Nací el 11 de Junio de 1980 en San José, Costa Rica.<br>
             Mis padres Francisco y Lilliana, ambos del valle central.<br>
             Casado, desde el 2006 y padre de una hermosa niña.<br><br>
@@ -431,6 +534,19 @@
             En el año 2000 inicié mi vida laboral en la empresa donde hasta el día de hoy formo parte del equipo de la noche en el departamento de Control de Riesgos.
             <br><br>
             En el 2019 reinicié mi camino formativo en CENFOTEC donde actualmente curso a la mitad del programa de bachillerato en Ingeniería de Software lo cual ha sido una de las mejores decisiones que pude haber tomado en mi vida (después de casarme, claramente).
+            
+          </p>
+          <p class=" english">Hi there! my name is <span class="morado">Francisco Tovar.</span> <br><br>
+            I was born in June of 1980 in San José, Costa Rica.<br>
+            My parents are Francisco y Lilliana, both from the central valley.<br>
+            I've been married since 2006 and I'm father to a beautiful teen daughter.<br><br>
+            The oldest of 3 siblings and raised mostly in the neighbourhoods around the north area of San Jose, Moravia and Coronado. 
+            I graduated from primary school in the Moravia School Porfirio Brenes and got my highschool diploma from the Liceo de Moravia <br><br>
+            I have been a student in the University of Costa Rica (UCR) and the State University for remote learning (UNED) to varying degrees of success.<br><br>
+            In 2000 I began my working journey in the company I work in to this day as part of the Risk Management department as a night shift agent.
+            <br><br>
+            In 2019 I restarted my education in CENFOTEC University where I'm coursing through the Software Development program and I'm nearing it's completion, 
+            honestly one of the best desicions I have taken in my life. (after marrying my beautiful wife ofcourse!)
             
           </p>
         </div>
@@ -465,7 +581,8 @@
         <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
           <img src="./IMAGENES/whitelogo.png" height="30">
         </a>
-        <span class="mb-3 mb-md-0 px-3 text-body-secondary espanol"> Diseño por Francisco Tovar © 2023<br> Todos los derechos reservados</span>
+        <span class="mb-3 mb-md-0 px-3 text-body-secondary espanol hidden"> Diseño por Francisco Tovar © 2023<br> Todos los derechos reservados</span>
+        <span class="mb-3 mb-md-0 px-3 text-body-secondary english"> Design by Francisco Tovar © 2023<br> All rights reserved</span>
       </div>
       <span class="mb-3 mb-md-0 text-body-secondary" id="id-mail"> Fran.TovarDev@gmail.com</span>
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">

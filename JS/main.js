@@ -6,12 +6,26 @@ const engl = document.querySelectorAll('.english');
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
+const espbutton = document.getElementById("esp-button");
+const engbutton = document.getElementById("eng-button");
+
+let storedlang = sessionStorage.getItem("lang")
+
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
 scrollFunction();
 whats();
 };
+
+window.onload = function (){
+  if (storedlang === null) {
+    sessionStorage.setItem("lang", "espanol");
+    set_espanol();
+  } else if (storedlang === 'english'){
+    set_english();
+  }
+}
 
 function scrollFunction() {
 if (
@@ -41,11 +55,27 @@ function whats () {
     radius:"20px"})})))
 };
 
-function toggleLang() {
-    var x = document.getElementById('myDIV');
-    if (x.style.visibility === 'hidden') {
-      x.style.visibility = 'visible';
-    } else {
-      x.style.visibility = 'hidden';
-    }
-  }
+
+function set_espanol(){
+  engl.forEach(element => {
+    element.classList.add('hidden')
+  });
+  espa.forEach(element => {
+    element.classList.remove('hidden')
+  });
+  sessionStorage.setItem("lang", "espanol")
+}
+
+function set_english(){
+  
+    espa.forEach(element => {
+      element.classList.add('hidden')
+    });
+    engl.forEach(element => {
+      element.classList.remove('hidden')
+    });
+    sessionStorage.setItem("lang", "english")
+}
+
+espbutton.addEventListener('click', set_espanol);
+engbutton.addEventListener('click', set_english);

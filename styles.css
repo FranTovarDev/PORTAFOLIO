@@ -64,6 +64,9 @@ body{
   height: 30px;
   width: auto;
 }
+.langicon:hover{
+  box-shadow: 0 5px 15px #d25434;
+}
 
 hr{
     background-color: #d25434;
